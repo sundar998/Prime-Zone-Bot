@@ -1,7 +1,7 @@
 <h1 align="center">
  <b><a href="https://youtu.be/mQh6p1-GJMk" target="/blank">Forward Bot</a>
 </h1>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 <p align="center">🩷 Thanks for Being Here 🩷</p>
 
 
@@ -30,7 +30,7 @@
 - [Developer Support](https://telegram.me/TechifySupport) 24x7
 </details>
 
-
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 ### 🔥 VARIABLES
 
 <details><summary>Tap On Me For Environment Variable</summary>
@@ -45,7 +45,7 @@
 * `FORCE_SUB_CHANNEL` - Link of fsub channel -  https://telegram.me/TechifyBots
 </details>
 </b>
-
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 ### 😍 COMMANDS
 
 <b><details><summary>Tap On Me For Commands</summary>
