@@ -66,6 +66,7 @@ restart - ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ. (ᴏᴡɴᴇʀ ᴏɴʟʏ)
 ```
 </details>
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ### 🥳 CREDIT
 
@@ -79,13 +80,19 @@ restart - ʀᴇsᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ. (ᴏᴡɴᴇʀ ᴏɴʟʏ)
 💖 And Thank You So Much To All Who Help In This Journey.
 </details>
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ### 💕 CONTACT DEVELOPER
 
 - [Rahul](https://telegram.me/TechifySupport)
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ### ☕ BUY ME A COFFEE
 - [PayPal](https://paypal.me/TechifyBots)
 - [UPI](https://TechifyBots.github.io/Donate)
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ### 📌 NOTE
 
