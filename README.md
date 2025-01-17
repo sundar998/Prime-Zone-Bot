@@ -1,6 +1,6 @@
-
+<h1 align="center">
  <b><a href="https://youtu.be/mQh6p1-GJMk" target="/blank">Forward Bot</a>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+</h1>
 
 <p align="center">🩷 Thanks for Being Here 🩷</p>
 
