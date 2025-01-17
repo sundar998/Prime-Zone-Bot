@@ -31,6 +31,7 @@
 </details>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ### 🔥 VARIABLES
 
 <details><summary>Tap On Me For Environment Variable</summary>
@@ -45,7 +46,9 @@
 * `FORCE_SUB_CHANNEL` - Link of fsub channel -  https://telegram.me/TechifyBots
 </details>
 </b>
+
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ### 😍 COMMANDS
 
 <b><details><summary>Tap On Me For Commands</summary>
