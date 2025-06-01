@@ -28,34 +28,24 @@
 
 <details><summary>Tap On Me For Environment Variable</summary>
 
-- `API_ID` : Get From [Here](https://youtu.be/RdMY6Lqfi9w)
-- `API_HASH` : Get From [Here](https://youtu.be/RdMY6Lqfi9w)
+- `API_ID` : Get From [Here](https://youtu.be/y5FwAobQ-Kc)
+- `API_HASH` : Get From [Here](https://youtu.be/y5FwAobQ-Kc)
 - `BOT_TOKEN` : Get From [BotFather](https://youtu.be/aJILCCXfNVM)
-- `ADMIN` : Your Telegram ID
+- `ADMIN` : Your Telegram User ID
+- `DB_URI` : MongoDB Database get from [here](https://youtu.be/j8LIuM7vv18)
 - `IMGBB_API_KEY` : Get from imgbb website
 - `LOG_CHANNEL` : Your Log channel ID.
-- `AUTH_CHANNEL` : Your Fsub channel ID
-
+- `AUTH_CHANNELS` : Your Fsub channel ID
 </details>
-
 
 
 ### 🥳 CREDIT
 
-<details><summary>Tap On Me For Credit</summary>
+ - [TechifyBots](https://github.com/TechifyBots)
 
+### 😇 [SUPPORT](https://techifybots.github.io/PayWeb)
 
-💝 [TechifyBots](https://github.com/TechifyBots)
-
-</details>
-
-### 💕 CONTACT DEVELOPER
-
-- [Rahul](https://telegram.me/TechifySupport)
-
-### ☕ BUY ME A COFFEE
-- [PayPal](https://paypal.me/TechifyBots)
-- [UPI](https://TechifyBots.github.io/Donate)
+### 🥳 [DEVELOPER](https://instagram.com/TechifyRahul)
 
 ### 📌 NOTE
 
