@@ -1,6 +1,8 @@
-# PRIME ZONE BOT
+<h1 align="center">
+ <b><a href="https://youtu.be/jcIrYkVy0d0" target="/blank">PRIME ZONE BOT</a>
+</h1>
 
-A powerful Telegram bot for managing and sharing video content with premium features and daily limits.
+<p align="center">🩷 Thanks for Being Here 🩷</p>
 
 ## Features
 
