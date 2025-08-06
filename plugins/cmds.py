@@ -44,7 +44,7 @@ async def start_command(client, message):
         ])
     )
 
-@Client.on_message(filters.command("getvideo") & filters.private)
+@Client.on_message(filters.command("getvideos") & filters.private)
 async def send_random_video(client: Client, message: Message):
     if await udb.is_user_banned(message.from_user.id):
         await message.reply("**🚫 You are banned from using this bot**",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Support 🧑‍💻", url=f"https://t.me/{ADMIN_USERNAME}")]]))
