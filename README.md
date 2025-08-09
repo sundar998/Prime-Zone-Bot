@@ -68,7 +68,7 @@
 ### CREDIT
 
  - [TechifyBots](https://github.com/TechifyBots)
- - [Dypixx](https://github.com/Dypixx)
+ - [Dypixx](https://github.com/Werdevelopers)
 
 
 ## Note
