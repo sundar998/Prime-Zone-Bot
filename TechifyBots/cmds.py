@@ -3,27 +3,62 @@ from pyrogram.types import *
 from vars import *
 from Database.maindb import mdb
 from Database.userdb import udb
+from Database.filestoredb import fsdb   # ✅ ADDED
 from datetime import datetime
 import pytz, random, asyncio
 from .fsub import get_fsub
 from Script import text
 
-# ✅ ADDED: Reply Keyboard (ONLY ADDITION)
+# ✅ Reply Keyboard (UNCHANGED)
 getvideos_keyboard = ReplyKeyboardMarkup(
     [[KeyboardButton("🎬 Get Videos")]],
     resize_keyboard=True
 )
 
+DELETE_TIME = 300  # 5 minutes for file store auto delete
+
+
 async def get_updated_limits():
-        global FREE_LIMIT, PRIME_LIMIT
-        limits = await mdb.get_global_limits()
-        FREE_LIMIT = limits["free_limit"]
-        PRIME_LIMIT = limits["prime_limit"]
-        return limits
+    global FREE_LIMIT, PRIME_LIMIT
+    limits = await mdb.get_global_limits()
+    FREE_LIMIT = limits["free_limit"]
+    PRIME_LIMIT = limits["prime_limit"]
+    return limits
 
 
 @Client.on_message(filters.command("start") & filters.private)
 async def start_command(client, message):
+
+    # ✅ FILE STORE LINK HANDLER (ADDED)
+    if len(message.command) > 1 and message.command[1].startswith("store_"):
+        store_id = message.command[1].replace("store_", "")
+        files = await fsdb.get_files(store_id)
+
+        if not files:
+            await message.reply_text("❌ Invalid or expired link")
+            return
+
+        sent_ids = []
+        for msg_id in files:
+            m = await client.copy_message(
+                chat_id=message.chat.id,
+                from_chat_id=DATABASE_CHANNEL_ID,
+                message_id=msg_id,
+                protect_content=True  # 🔒 FORWARD PROTECTION
+            )
+            sent_ids.append(m.id)
+
+        await message.reply_text(
+            "⚠️ These files will be deleted after 5 minutes."
+        )
+
+        await asyncio.sleep(DELETE_TIME)
+        await client.delete_messages(message.chat.id, sent_ids)
+        return
+    # 🔚 FILE STORE HANDLER END
+
+
+    # 🔒 BAN CHECK (UNCHANGED)
     if await udb.is_user_banned(message.from_user.id):
         await message.reply(
             "**🚫 You are banned from using this bot**",
@@ -50,7 +85,6 @@ async def start_command(client, message):
             )
         )
 
-    # 🔹 ORIGINAL MESSAGE (UNCHANGED)
     await message.reply_photo(
         photo=random.choice(PICS),
         caption=text.START.format(message.from_user.mention),
@@ -61,14 +95,12 @@ async def start_command(client, message):
         ])
     )
 
-    # ✅ ADDED: Separate message ONLY for keyboard
     await message.reply_text(
         "👇 Use the button below to get videos",
         reply_markup=getvideos_keyboard
     )
 
 
-# ✅ MODIFIED: command + keyboard both trigger SAME code
 @Client.on_message(
     (filters.command("getvideos") |
      (filters.text & filters.regex("^🎬 Get Videos$")))
@@ -97,10 +129,7 @@ async def send_random_video(client: Client, message: Message):
     user = await mdb.get_user(user_id)
     plan = user.get("plan", "free")
 
-    if plan == "prime":
-        videos = await mdb.get_all_videos()
-    else:
-        videos = await mdb.get_free_videos()
+    videos = await mdb.get_all_videos() if plan == "prime" else await mdb.get_free_videos()
 
     if not videos:
         await message.reply_text("No videos available at the moment.")
@@ -135,7 +164,6 @@ async def send_random_video(client: Client, message: Message):
 
         await mdb.increment_daily_count(user_id)
 
-        # ⏱ AUTO DELETE (UNCHANGED)
         await asyncio.sleep(300)
         await dy.delete()
 
